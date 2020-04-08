@@ -1,10 +1,17 @@
 --cpu Cortex-M4.fp
+"mini\startup_stm32f407xx.o"
 "mini\main.o"
 "mini\gpio.o"
+"mini\spi.o"
+"mini\tim.o"
+"mini\usart.o"
 "mini\stm32f4xx_it.o"
 "mini\stm32f4xx_hal_msp.o"
+"mini\scan.o"
+"mini\stm32f4xx_hal_spi.o"
 "mini\stm32f4xx_hal_tim.o"
 "mini\stm32f4xx_hal_tim_ex.o"
+"mini\stm32f4xx_hal_uart.o"
 "mini\stm32f4xx_hal_rcc.o"
 "mini\stm32f4xx_hal_rcc_ex.o"
 "mini\stm32f4xx_hal_flash.o"
@@ -18,7 +25,6 @@
 "mini\stm32f4xx_hal_cortex.o"
 "mini\stm32f4xx_hal.o"
 "mini\system_stm32f4xx.o"
-"mini\startup_stm32f407xx.o"
 --library_type=microlib --strict --scatter "Mini\Mini.sct"
 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
